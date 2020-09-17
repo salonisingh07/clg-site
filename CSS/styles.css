@@ -40,6 +40,7 @@ body{
 .dropdown-item{
   /* background-color: transparent; */
   color: black;
+  text-align: center;
 }
 
 .dropdown-item:hover{
@@ -269,19 +270,14 @@ nav ul li a:hover{
   color:  #435E55FF;
 }
 /* ...................................................facilities............................................ */
+
 /*                                                           contact-us                                       */
-/* #form{
-  padding: 0%;
-  margin: 0%;
-  text-align: center;
-  background: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)),url(IMAGES/3RD.JPG);
-  background-size: cover;
-  background-position: center;
-} */
+
 #form .container{
   position: relative;
   text-align: center;
   color: white;
+  font-family: 'Chelsea Market', cursive;
 }
 .query-image{
   filter: blur(8px);
@@ -290,7 +286,7 @@ nav ul li a:hover{
 }
 .contact-title{
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-transform: uppercase;
@@ -305,7 +301,7 @@ nav ul li a:hover{
 }
 .contact-form{
   position: absolute;
-  top: 70%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -314,24 +310,29 @@ nav ul li a:hover{
   background: transparent;
   border: none;
   outline: none;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
   color: #fff;
   font-size: 18px;
   margin-bottom: 16px;
+}
+.form-control::placeholder{
+  color: white;
 }
 .form-msg{
   width: 600;
   background: transparent;
   border: none;
   outline: none;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
     color: #fff;
   font-size: 18px;
   margin-bottom: 16px;
 }
 input{
   height: 45px;
-
+}
+::placeholder{
+  color: white ;
 }
 #form form .submit{
   background: #ff5722;
@@ -345,3 +346,41 @@ input{
 }
 #form form .submit:hover{
   background-color: #f44336;
+}
+
+.sports-table{
+  width: 80%;
+  border: 1px solid;
+  margin-bottom: 30px;
+  margin-left:10%;
+  margin-right: 20%;
+}
+.sports-table th{
+  text-align: center;
+  color: #435E55FF;
+  width: 100px;
+}
+.sports-table td {
+  text-align: center;
+  height: 50px;
+  width: 300px ;
+}
+@media only screen and (max-width: 600px) {
+  .sports-table th{
+    text-align: center;
+    color: #435E55FF;
+    width: 70px;
+  }
+  .sports-table td {
+    text-align: center;
+    height: 50px;
+    width: 200px ;
+  }
+  .sports-table{
+    width: 80%;
+    height: 400px;
+    margin-bottom: 30px;
+    margin-left:10%;
+    margin-right: 20%;
+  }
+}
